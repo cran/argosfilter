@@ -57,7 +57,8 @@ dtime<-seal$dtime
 lc<-seal$lc
 
 # plot unfiltered data
-plot(lon,lat,col="lightgrey",type="l",xlim=c(5,18), ylim=c(77.1,79.1),xlab="Longitude",ylab="Latitude")
+plot(lon,lat,col="lightgrey",type="l",xlim=c(5,18),
+ylim=c(77.1,79.1),xlab="Longitude",ylab="Latitude")
 
 # filter by speed only
 mfilter<-vmask(lat,lon,dtime,2)

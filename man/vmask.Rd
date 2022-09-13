@@ -50,7 +50,8 @@ lc<-seal$lc
 mfilter<-vmask(lat,lon,dtime,2)
 
 # plot unfiltered (grey) and filtered data (green)
-plot(lon,lat,col="lightgrey",type="l",xlim=c(5,18), ylim=c(77.1,79.1),xlab="Longitude",ylab="Latitude")
+plot(lon,lat,col="lightgrey",type="l",xlim=c(5,18), 
+ylim=c(77.1,79.1),xlab="Longitude",ylab="Latitude")
 lines(lon[which(mfilter=="not")],lat[which(mfilter=="not")],col="darkgreen")
 }
 
